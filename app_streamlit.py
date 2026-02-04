@@ -4,10 +4,10 @@ import streamlit as st
 
 model = joblib.load("model_random_forest.joblib")
 
-st.sidebar.title(":tomato: Machine Learning")
+st.sidebar.title(":Machine Learning")
 st.sidebar.success("Dibuat oleh Farel")
 
-st.title("Regresi Penjualan Tomat")
+st.title("tomato:Regresi Penjualan Tomat")
 st.markdown("Aplikasi machine learning regression untuk menghitung total penjualan tomat berdasarkan fitur `Harga`, `Hari`, `Cuaca`, dan `Promo`")
 
 harga = st.slider("Harga", 0, 20000, 7000)
@@ -21,6 +21,7 @@ if st.button("Pediksi"):
 	st.success(f"Model memprediksi total penjualan tomat {prediksi:.0f}")
 
 	st.balloons()
+
 
 
 
