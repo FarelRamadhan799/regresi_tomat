@@ -5,8 +5,8 @@ import streamlit as st
 model = joblib.load("model_random_forest.joblib")
 
 set_page_config (
-	page.title("Regresi Tomat")
-	page.icon(":tomato:")
+	page_title("Regresi Tomat")
+	page_icon(":tomato:")
 )
 
 st.sidebar.title(":tomato: Machine Learning")
@@ -26,3 +26,4 @@ if st.button("Pediksi"):
 	st.success(f"Model memprediksi total penjualan tomat {prediksi:.0f}")
 
 	st.balloons()
+
